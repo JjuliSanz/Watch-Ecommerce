@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Luxury Watches Ecommerce
 
-First, run the development server:
+Explore an exquisite collection of Rolex watches at our next-generation e-commerce platform built with Next.js 13, powered by JavaScript. The sleek and responsive design, crafted with Tailwind CSS, provides an immersive shopping experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Our product lineup, sourced from a JSON dataset, features a variety of Rolex timepieces, each meticulously detailed. Leveraging the efficiency of JSON Server, the products seamlessly integrate into our site. The dynamic functionalities and user-friendly interface are enhanced by the latest features of Next.js 13.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Discover the luxury of Rolex watches, effortlessly navigating through the collection using RapidAPI. Our platform combines cutting-edge technology, elegant design, and a curated selection to redefine your online shopping experience. Indulge in the world of Rolex at the touch of your fingertips.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Technology Stack & Tools
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+ - [NextJS](https://nextjs.org/docs)
+ - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+ - [TailwindCSS](https://tailwindcss.com)
+ - [RapidAPI](https://docs.rapidapi.com/)
+ - [JsonServer](https://www.npmjs.com/package/json-server?activeTab=versions)
 
-## Learn More
+## Authors
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [@JjuliSanz ](https://github.com/JjuliSanz)

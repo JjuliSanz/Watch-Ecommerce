@@ -3,25 +3,285 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --gold: rgb(255, 170, 0);
+  --brown: #391b00;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+.goldShadow {
+  box-shadow: 0px 0px 10px 1px var(--gold);
+}
+
+.background {
+  background: radial-gradient(
+        circle,
+        transparent 20%,
+        #392b1d 20%,
+        #392b1d 80%,
+        transparent 80%,
+        transparent
+      )
+      0% 0% / 80px 80px,
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #392b1d 20%,
+        #392b1d 80%,
+        transparent 80%,
+        transparent
+      )
+      40px 40px / 80px 80px,
+    linear-gradient(#c88c00 3px, transparent 3px) 0px -1.5px / 40px 40px,
+    linear-gradient(90deg, #c88c00 3px, #392b1d 3px) -1.5px 0px / 40px 40px #392b1d;
+  background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
+  background-color: #392b1d;
+}
+.glass {
+  background: rgba(57, 27, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 3px solid var(--gold);
+}
+
+.nav-bg {
+  background: var(--brown);
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.nav-bg::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 5px;
+  top: 35px;
+  bottom: 0;
+  left: -40px;
+  right: 0;
+  background-image: linear-gradient(90deg, var(--brown) 0%, var(--gold) 100%);
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.nav-bg::after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 5px;
+  top: 35px;
+  bottom: 0;
+  left: 980px;
+  right: 0;
+  background-image: linear-gradient(90deg, var(--gold) 50%, var(--brown) 100%);
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.nav-title {
+  background: var(--brown);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    var(--brown) 0%,
+    var(--gold) 50%,
+    var(--brown) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--gold);
 }
+
+.nav-link {
+  color: rgba(255, 170, 0, 0);
+  text-decoration-color: var(--gold);
+  -webkit-text-stroke: 1px var(--gold);
+}
+
+.footer-text {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.title-container {
+  position: relative;
+  z-index: 10;
+}
+
+.title-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  clip-path: ellipse(50% 65% at 50% 50%);
+  background: #392b1d;
+  z-index: -1;
+}
+
+.title {
+  background: var(--gold);
+  background: linear-gradient(to bottom, var(--brown) 40%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-text-stroke: 1px rgb(255, 189, 57);
+  text-shadow: 0px 1px 10px var(--gold);
+
+  position: relative;
+  z-index: 10;
+}
+
+.topsales-title {
+  background: var(--gold);
+  background: linear-gradient(to bottom, var(--brown) 40%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-text-stroke: 1px rgb(255, 189, 57);
+  text-shadow: 0px 1px 10px var(--gold);
+}
+
+.topsales-border {
+  position: relative;
+}
+.topsales-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  height: 2px;
+  background-image: radial-gradient(
+    circle,
+    rgb(200, 140, 0) 0%,
+    rgb(57, 27, 0) 100%
+  );
+  border-radius: 15px;
+}
+
+.card-title {
+  background: var(--brown);
+  background: linear-gradient(
+    to bottom,
+    var(--brown) 0%,
+    var(--gold) 50%,
+    var(--brown) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.card-title::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  height: 2px;
+  background-image: radial-gradient(
+    circle,
+    rgb(200, 140, 0) 0%,
+    rgb(57, 27, 0) 100%
+  );
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.gold-text {
+  color: var(--gold);
+  text-shadow: 0px 1px 5px var(--gold);
+}
+
+.search {
+  outline: none;
+  background: var(--brown);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  transition: 0.3s ease;
+}
+
+.search:focus {
+  outline: none;
+  border: 1px solid var(--gold);
+  box-shadow: 0px 0px 10px 1px var(--gold);
+}
+
+.input::placeholder {
+  color: #ddb635;
+}
+
+.product-title {
+  background: var(--brown);
+  background: linear-gradient(
+    to bottom,
+    var(--brown) 0%,
+    var(--gold) 50%,
+    var(--brown) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-text-stroke: 1px rgb(255, 189, 57); */
+  /* -webkit-text-stroke: 1px var(--gold); */
+  position: relative;
+}
+
+.product-title::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  height: 2px;
+  background-image: radial-gradient(circle, var(--gold) 0%, var(--brown) 100%);
+  z-index: -2;
+  border-radius: 15px;
+}
+
+.in-stock {
+  color: #54db15;
+  text-shadow: 0px 1px 5px #54db15;
+}
+
+.out-stock {
+  color: #dd3113;
+  text-shadow: 0px 1px 5px #dd3113;
+}
+
+
+.button-container {
+  background: rgba(57, 27, 0, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--gold);
+  transition: transform 0.5s ease-in;
+}
+.button-container:hover {
+  box-shadow: 0px 0px 10px 1px var(--gold);
+  scale: 0.95;
+}
+
+.button {
+  background: var(--brown);
+  background: linear-gradient(
+    to bottom,
+    var(--brown) 0%,
+    var(--gold) 50%,
+    var(--brown) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+

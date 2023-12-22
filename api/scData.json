@@ -1,0 +1,120 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "ref": "07109",
+      "url": "/Rolex/Cosmograph/Cosmograph-Daytona.jpg",
+      "model": "GMT-Master II",
+      "desc": "La estructura del nuevo patinete Xiaomi Pro es plegable y resistente. Además es ligero (14.2 kg), y te permitirá transportarlo donde quieras o guardarlo sin que ocupe mucho espacio",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 546,
+      "stock": 15,
+      "images": [
+        "/Rolex/Cosmograph/Cosmograph-Daytona.jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(2).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(3).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(4).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(5).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(6).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(7).jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "ref": "07110",
+      "url": "/Rolex/Datejust/Datejust36.png",
+      "model": "Datejust 36",
+      "desc": "Un gran contraste de colores para moverte con estilo. Xiaomi Electric Scooter 4 Go cuenta con una exclusiva base redondeada con forma de circuito de carreras y un llamativo cubo de rueda con gran contraste de color en el diseño, lo que le da un toque de vitalidad y estilo a tus viajes",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 299,
+      "stock": 0,
+      "images": [
+        "/Rolex/Datejust/Datejust36.png",
+        "/Rolex/Datejust/Datejust36(1).jpg",
+        "/Rolex/Datejust/Datejust36(2).jpg",
+        "/Rolex/Datejust/Datejust36(3).jpg",
+        "/Rolex/Datejust/Datejust36(4).jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "ref": "07310",
+      "url": "/Rolex/DayDate/Day-Date.jpg",
+      "desc": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+      "model": "Day Date",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 350,
+      "stock": 5,
+      "images": [
+        "/Rolex/DayDate/Day-Date.jpg",
+        "/Rolex/DayDate/Day-Date(2).jpg",
+        "/Rolex/DayDate/Day-Date(3).jpg",
+        "/Rolex/DayDate/Day-Date(4).jpg",
+        "/Rolex/DayDate/Day-Date(5).jpg",
+        "/Rolex/DayDate/Day-Date(6).jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "ref": "07311",
+      "url": "/Rolex/GMT2/GMTMaster2.png",
+      "model": "GMT Master II",
+      "desc": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+      "destacado": 1,
+      "brand": "Rolex",
+      "price": 375,
+      "stock": 0,
+      "images": [
+        "/Rolex/GMT2/GMTMaster2.png",
+        "/Rolex/GMT2/GMTMaster2(2).jpg",
+        "/Rolex/GMT2/GMTMaster2(3).jpg",
+        "/Rolex/GMT2/GMTMaster2(4).png",
+        "/Rolex/GMT2/GMTMaster2(5).jpg",
+        "/Rolex/GMT2/GMTMaster2(6).jpg",
+        "/Rolex/GMT2/GMTMaster2(7).png"
+      ]
+    },
+    {
+      "id": 5,
+      "ref": "07410",
+      "url": "/Rolex/Submariner/Submariner.png",
+      "model": "Submariner",
+      "desc": "El patinete puede alcanzar una velocidad máxima de 25 km/h y tiene una capacidad de ascensión de un 16 %. Avanza con solo pulsar ligeramente el acelerador.",
+      "destacado": 1,
+      "brand": "Rolex",
+      "price": 250,
+      "stock": 30,
+      "images": [
+        "/Rolex/Submariner/Submariner.png",
+        "/Rolex/Submariner/Submariner(1).png",
+        "/Rolex/Submariner/Submariner(2).png",
+        "/Rolex/Submariner/Submariner(3).png",
+        "/Rolex/Submariner/Submariner(4).png",
+        "/Rolex/Submariner/Submariner(5).png"
+      ]
+    },
+    {
+      "id": 6,
+      "ref": "07109",
+      "url": "/Rolex/Cosmograph/Cosmograph-Daytona.jpg",
+      "model": "GMT-Master II",
+      "desc": "La estructura del nuevo patinete Xiaomi Pro es plegable y resistente. Además es ligero (14.2 kg), y te permitirá transportarlo donde quieras o guardarlo sin que ocupe mucho espacio",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 546,
+      "stock": 15,
+      "images": [
+        "/Rolex/Cosmograph/Cosmograph-Daytona.jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(2).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(3).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(4).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(5).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(6).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(7).jpg"
+      ]
+    }
+  ]
+}
