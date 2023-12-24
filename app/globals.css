@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --gold: rgb(255, 170, 0);
+  --gold: #ffaa00;
   --brown: #391b00;
 }
 
@@ -150,6 +150,7 @@
 .topsales-border {
   position: relative;
 }
+
 .topsales-border::before {
   content: "";
   position: absolute;
@@ -179,6 +180,7 @@
   -webkit-text-fill-color: transparent;
   position: relative;
 }
+
 .card-title::before {
   content: "";
   position: absolute;
@@ -285,3 +287,26 @@
 }
 
 
+.filter-arrow-container{
+  background-color: var(--brown);
+  border: 1px solid var(--gold);
+}
+
+.filter-container {
+  background-color: var(--brown);
+  border: 1px solid var(--gold);
+  position: absolute;
+  /* top: 0;*/
+  right: 230px; 
+  z-index: 10;
+}
+
+.filter{
+  /* border-bottom: 1px solid var(--gold); */
+  text-decoration-color: var(--gold);
+}
+
+.filter:hover{
+  scale: 0.95;
+  box-shadow: 0px 0px 10px 1px var(--gold);
+}

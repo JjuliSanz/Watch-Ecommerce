@@ -12,8 +12,8 @@ const ProductInfo = ({ product }) => {
 
   return (
     <>
-      <div className="w-[20%] flex flex-col gap-4 p-6 h-full">
-        {product.images.map((image, index) => (
+      <div className="w-[20%] flex flex-col gap-4 h-full justify-center items-center">
+        {product.images.slice(0, 7).map((image, index) => (
           <div
             className={`w-[70px] h-[70px] rounded-xl border-2 border-[#ffaa00] cursor-pointer  hover:scale-[.95] ${productImage === image ? "goldShadow" : ""}`}
             key={index}
@@ -36,7 +36,7 @@ const ProductInfo = ({ product }) => {
             alt={product.model}
             width={1000}
             height={1000}
-            className="object-cover rounded-xl w-full h-full"
+            className="object-cover object-center rounded-xl w-full h-full"
           />
         </div>
       </div>

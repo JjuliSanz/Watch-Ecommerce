@@ -1,0 +1,118 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "ref": "126506",
+      "url": "/Rolex/Cosmograph/Cosmograph-Daytona(3).jpg",
+      "model": "Cosmograph-Daytona",
+      "desc": "Launched in 1963, the Cosmograph Daytona has long since transcended its status in the world of watchmaking to become an icon. Its name, inextricably linked to the famous racetrack, as well as its graphic face, have made it a legend. Yet it is at the heart of this exceptional chronograph that the true mechanics of the legend beat: a movement designed and produced entirely by the Rolex Manufacture that delivers superlative performance in all circumstances. Constantly improved and refined over time, the Cosmograph Daytona has proved to be as reliable as it is precise.",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 113600,
+      "stock": 15,
+      "images": [
+        "/Rolex/Cosmograph/Cosmograph-Daytona.jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(2).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(3).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(4).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(5).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(6).jpg",
+        "/Rolex/Cosmograph/Cosmograph-Daytona(7).jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "ref": "126233",
+      "url": "/Rolex/Datejust/Datejust36.png",
+      "model": "Datejust 36",
+      "desc": "Any day can leave a lasting mark on our lives and set the stage for new aspirations. Since its creation in 1945, the Datejust has continued to reinvent itself while symbolizing Rolex’s definition of classic elegance. A milestone in watchmaking history, it was the first self-winding waterproof chronometer wristwatch to feature a window displaying the date. Magnified by the Cyclops lens, these numbers are a reminder that though 24 hours mark a day, it’s on us to make those a date to remember.",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 18500,
+      "stock": 0,
+      "images": [
+        "/Rolex/Datejust/Datejust36.png",
+        "/Rolex/Datejust/Datejust36(1).jpg",
+        "/Rolex/Datejust/Datejust36(2).jpg",
+        "/Rolex/Datejust/Datejust36(3).jpg",
+        "/Rolex/Datejust/Datejust36(4).jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "ref": "228236",
+      "url": "/Rolex/DayDate/Day-Date(2).jpg",
+      "desc": "If time changes all things, this minute changes them more than the others. When midnight strikes, the Day-Date forms a bridge between past and future, between what has been achieved and what remains to be lived. Since 1956, it has borne witness to the greatest moments in history on the wrist of visionaries, virtuosos and pioneers. Those who make each day a promise for the future.",
+      "model": "Day-Date",
+      "destacado": 0,
+      "brand": "Rolex",
+      "price": 92400,
+      "stock": 2,
+      "images": [
+        "/Rolex/DayDate/Day-Date.jpg",
+        "/Rolex/DayDate/Day-Date(2).jpg",
+        "/Rolex/DayDate/Day-Date(3).jpg",
+        "/Rolex/DayDate/Day-Date(4).jpg",
+        "/Rolex/DayDate/Day-Date(5).jpg",
+        "/Rolex/DayDate/Day-Date(6).jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "ref": "126720",
+      "url": "/Rolex/GMT2/GMTMaster2.png",
+      "model": "GMT Master II",
+      "desc": "As the successor to the model presented in 1955 and adopted by airline pilots, the GMT-Master II has become the ultimate cosmopolitan watch. With an additional 24-hour hand and a two-colour rotatable graduated bezel, it displays a second time zone. It also allows each wearer to strengthen their connection with their own personal “somewhere out there”, whether it be from memories, dream destinations or future journeys.",
+      "destacado": 1,
+      "brand": "Rolex",
+      "price": 13600,
+      "stock": 5,
+      "images": [
+        "/Rolex/GMT2/GMTMaster2.png",
+        "/Rolex/GMT2/GMTMaster2(2).jpg",
+        "/Rolex/GMT2/GMTMaster2(3).jpg",
+        "/Rolex/GMT2/GMTMaster2(4).png",
+        "/Rolex/GMT2/GMTMaster2(5).jpg",
+        "/Rolex/GMT2/GMTMaster2(6).jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "ref": "124060",
+      "url": "/Rolex/Submariner/Submariner.png",
+      "model": "Submariner",
+      "desc": "Launched in 1953, the Rolex Submariner is the first divers’ wristwatch to be waterproof to a depth of 100 metres (330 feet) – now 300 metres (1,000 feet). Its major features, such as the graduated rotatable bezel, the luminescent display, the large hands and hour markers, have been a driving force in the creation of the long line of Rolex divers’ watches which followed.",
+      "destacado": 1,
+      "brand": "Rolex",
+      "price": 11000,
+      "stock": 15,
+      "images": [
+        "/Rolex/Submariner/Submariner.png",
+        "/Rolex/Submariner/Submariner(1).png",
+        "/Rolex/Submariner/Submariner(2).png",
+        "/Rolex/Submariner/Submariner(3).png",
+        "/Rolex/Submariner/Submariner(4).png",
+        "/Rolex/Submariner/Submariner(5).png"
+      ]
+    },
+    {
+      "id": 6,
+      "ref": "52508",
+      "url": "/Rolex/1908/1908.jpg",
+      "model": "1908",
+      "desc": "Since the brand’s creation in 1908, Rolex has pursued the fundamental conviction of its founder, Hans Wilsdorf, that the future of the wristwatch is inseparable from superlative performance. Heir to the brand’s aesthetic heritage and boasting exclusive watchmaking innovations, the elegant Perpetual 1908 marks a new milestone in the Manufacture's quest for excellence. This fine example of Rolex’s watchmaking prowess, with Superlative Chronometer certification, brings classicism to the future.",
+      "destacado": 1,
+      "brand": "Rolex",
+      "price": 32100,
+      "stock": 15,
+      "images": [
+        "/Rolex/1908/1908.jpg",
+        "/Rolex/1908/1908(2).jpg",
+        "/Rolex/1908/1908(3).jpg",
+        "/Rolex/1908/1908(4).jpg",
+        "/Rolex/1908/1908(5).jpg",
+        "/Rolex/1908/1908(6).jpg"
+      ]
+    }
+  ]
+}

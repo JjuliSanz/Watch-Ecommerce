@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import Filter from "./Filter";
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -16,25 +17,26 @@ const SearchBar = () => {
   };
 
   useEffect(() => {
-    router.push(`/watches`)
-  }, [])
+    router.push(`/watches`);
+  }, []);
 
   return (
-    <div className="flex justify-center w-1/3">
+    <div className="flex justify-center items-center gap-6">
       <form
         onSubmit={(e) => {
           e.preventDefault();
           handleSearch();
         }}
-        className="w-max-[550px] relative w-full lg:w-80 xl:w-full"
+        className="relative w-full"
       >
         <input
           type="text"
-          className="text-lg rounded search"
+          className="text-lg rounded-xl search"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         />
       </form>
+      {/* <Filter/> */}
     </div>
   );
 };

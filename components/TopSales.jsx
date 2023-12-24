@@ -12,8 +12,8 @@ const TopSales = ({ topProducts }) => {
           key={index}
         >
           <p className="gold-text">{product.model}</p>
-          <p className=" p-0.5 rounded-md gold-text w-[50px] flex items-center justify-center">
-            {product.price} E
+          <p className="gold-text flex items-center justify-center">
+            {product.price.toLocaleString()} USD
           </p>
         </div>
       ))}

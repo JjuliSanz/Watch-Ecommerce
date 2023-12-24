@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Card = ({ url, model, desc, id }) => {
   return (
-    <div className=" w-[250px] h-[370px] flex flex-col rounded-xl border-[3px] border-yellow-300 glass goldShadow">
+    <div className=" w-[250px] h-[370px] flex flex-col rounded-xl glass goldShadow">
       {/* Image */}
       <div className="pt-2 h-[50%] w-[90%] rounded-xl place-self-center">
         <Image

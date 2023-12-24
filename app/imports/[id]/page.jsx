@@ -1,3 +1,4 @@
+import ProductInfo from "@/components/ProductInfo";
 import { getRapidAPIProductById } from "@/lib/utils";
 import Image from "next/image";
 
@@ -7,13 +8,13 @@ export default async function Import({ params }) {
   console.log(product);
 
   return (
-    <main className="min-h-screen p-10 dark:bg-gray-950">
-      <div className="w-full grid grid-cols-6 bg-gray-100 dark:bg-gray-700 p-5 rounded-xl">
+    <main className="min-h-screen p-10">
+      <div className="w-full grid grid-cols-7 glass goldShadow rounded-xl">
         <div className="col-span-4 flex">
-          <div className="flex flex-col gap-4 justify-center">
+          {/* <div className="w-[20%] flex flex-col gap-4 justify-center items-center h-full">
             {product.images.map((image, index) => (
               <div
-                className="w-[60px] h-[60px] rounded-xl border-[4px] dark:border-yellow-600 "
+                className="w-[70px] h-[70px] rounded-xl border-2 border-[#ffaa00] goldShadow"
                 key={index}
               >
                 <Image
@@ -21,26 +22,54 @@ export default async function Import({ params }) {
                   alt={`image ${index}`}
                   width={1000}
                   height={1000}
-                  className="rounded-xl"
+                  className="rounded-xl object-cover w-full h-full"
                 />
               </div>
             ))}
           </div>
-          <div className="p-10">
-            <Image
-              src={`https:${product.images[0]}`}
-              alt={product.model}
-              width={2000}
-              height={2000}
-              className="border-[4px] rounded-xl dark:border-yellow-600"
-            />
-          </div>
+          <div className="w-full h-full flex justify-center items-center">
+            <div className="w-[500px] h-[500px] relative glass rounded-xl goldShadow">
+              <Image
+                src={`https:${product.images[0]}`}
+                alt={product.model}
+                width={2000}
+                height={2000}
+                className="object-cover rounded-xl w-full h-full"
+              />
+            </div>
+          </div> */}
+          <ProductInfo product={product} />
         </div>
-        <div className="col-span-2 flex flex-col gap-4 ">
-          <div className="text-sm">{product.itemId}</div>
-          <div className="text-xl text-semibold">{product.title}</div>
-          {/* <div>{product.desc}</div> */}
-          {/* Start */}
+        <div className="col-span-3 flex flex-col gap-4 h-full p-4">
+          {/* Reference */}
+          <div className="text-sm gold-text">{product.itemId}</div>
+          {/* Title */}
+          <div className="text-3xl font-semibold product-title">
+            {product.title}
+          </div>
+          {/* Brand */}
+          <div className="text-xl font-medium gold-text justify-start">
+            {product.brand}
+          </div>
+          {/* Price */}
+          <div className="text-3xl font-medium gold-text ">
+            ${product.price} USD
+          </div>
+          {/* Description */}
+          <div className="text-xl font-medium gold-text">{product.desc}</div>
+          {/* Stock */}
+          {product.stock > 0 ? (
+            <div className="text-xl font-medium in-stock">In Stock</div>
+          ) : (
+            <div className="text-xl font-medium inline out-stock">
+              Out Stock
+            </div>
+          )}
+          {/* Ship */}
+          <div className="text-base font-medium gold-text">
+            Ships from {product.location}
+          </div>
+          {/* Stars */}
           <div className="flex gap-2">
             <span>4</span>
             <div className="flex items-center gap-2">
@@ -96,10 +125,21 @@ export default async function Import({ params }) {
               </svg>
             </div>
           </div>
-          <div className="">5 Unidades disponibles</div>
-          <div className="text-2xl">{product.sku.def.quantity} USD</div>
+
+          {/* Buttons */}
+          <div className="flex justify-center items-center gap-6">
+            <div className="w-fit rounded-xl button-container">
+              <button className="text-3xl font-semibold py-1 px-6 rounded-xl button">
+                Buy It
+              </button>
+            </div>
+            <div className="w-fit rounded-xl button-container">
+              <button className="text-3xl font-semibold py-1 px-6 rounded-xl button">
+                Add to cart
+              </button>
+            </div>
+          </div>
         </div>
-        {/* <div className="col-span-2 border rounded-xl"></div> */}
       </div>
     </main>
   );

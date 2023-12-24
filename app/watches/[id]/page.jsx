@@ -38,7 +38,7 @@ export default async function Watch({ params }) {
               />
             </div>
           </div> */}
-          <ProductInfo product={product}/>
+          <ProductInfo product={product} />
         </div>
         <div className="col-span-3 flex flex-col gap-4 h-full p-4">
           {/* Reference */}
@@ -53,7 +53,7 @@ export default async function Watch({ params }) {
           </div>
           {/* Price */}
           <div className="text-3xl font-medium gold-text ">
-            ${product.price} USD
+            ${product.price.toLocaleString()} USD
           </div>
           {/* Description */}
           <div className="text-xl font-medium gold-text">{product.desc}</div>
@@ -70,6 +70,7 @@ export default async function Watch({ params }) {
             Ships from {product.location}
           </div>
 
+          {/* Buttons */}
           <div className="flex justify-center items-center gap-6">
             <div className="w-fit rounded-xl button-container">
               <button className="text-3xl font-semibold py-1 px-6 rounded-xl button">
