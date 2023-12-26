@@ -5,58 +5,30 @@ import Image from "next/image";
 export default async function Watch({ params }) {
   const data = await getProductById(params.id);
   const product = data[0];
-  console.log(product);
 
   return (
     <main className="min-h-screen p-10">
-      <div className="w-full min-h-[600px] grid grid-cols-7 glass goldShadow rounded-xl">
+      <div className="w-full min-h-[600px] grid grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl">
         <div className="col-span-4 flex h-full ">
-          {/* <div className="w-[20%] flex flex-col gap-4 justify-center items-center h-full">
-            {product.images.map((image, index) => (
-              <div
-                className="w-[70px] h-[70px] rounded-xl border-2 border-[#ffaa00] goldShadow"
-                key={index}
-              >
-                <Image
-                  src={`${image}`}
-                  alt={`image ${index}`}
-                  width={1000}
-                  height={1000}
-                  className="rounded-xl object-cover w-full h-full"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="w-full h-full flex justify-center items-center ">
-            <div className="w-[500px] h-[500px] relative glass rounded-xl goldShadow">
-              <Image
-                src={`${product.url}`}
-                alt={product.model}
-                width={1000}
-                height={1000}
-                className="object-cover rounded-xl w-full h-full"
-              />
-            </div>
-          </div> */}
           <ProductInfo product={product} />
         </div>
         <div className="col-span-3 flex flex-col gap-4 h-full p-4">
           {/* Reference */}
-          <div className="text-sm gold-text">Ref {product.ref}</div>
+          <div className="text-sm text-gold text-gold-shadow">Ref {product.ref}</div>
           {/* Title */}
           <div className="text-3xl font-semibold product-title">
             {product.model}
           </div>
           {/* Brand */}
-          <div className="text-xl font-medium gold-text justify-start">
+          <div className="text-xl font-medium text-gold text-gold-shadow justify-start">
             {product.brand}
           </div>
           {/* Price */}
-          <div className="text-3xl font-medium gold-text ">
+          <div className="text-3xl font-medium text-gold text-gold-shadow ">
             ${product.price.toLocaleString()} USD
           </div>
           {/* Description */}
-          <div className="text-xl font-medium gold-text">{product.desc}</div>
+          <div className="text-xl font-medium text-gold text-gold-shadow">{product.desc}</div>
           {/* Stock */}
           {product.stock > 0 ? (
             <div className="text-xl font-medium in-stock">In Stock</div>
@@ -66,18 +38,18 @@ export default async function Watch({ params }) {
             </div>
           )}
           {/* Ship */}
-          <div className="text-base font-medium gold-text">
+          <div className="text-base font-medium text-gold text-gold-shadow">
             Ships from {product.location}
           </div>
 
           {/* Buttons */}
           <div className="flex justify-center items-center gap-6">
-            <div className="w-fit rounded-xl button-container">
+            <div className="w-fit rounded-xl border border-gold glassmorphism hover:scale-[0.95] hover:shadow-gold-shadow">
               <button className="text-3xl font-semibold py-1 px-6 rounded-xl button">
                 Buy It
               </button>
             </div>
-            <div className="w-fit rounded-xl button-container">
+            <div className="w-fit rounded-xl border border-gold glassmorphism hover:scale-[0.95] hover:shadow-gold-shadow">
               <button className="text-3xl font-semibold py-1 px-6 rounded-xl button">
                 Add to cart
               </button>

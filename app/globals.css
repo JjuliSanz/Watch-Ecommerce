@@ -13,8 +13,8 @@
   box-sizing: border-box;
 }
 
-.goldShadow {
-  box-shadow: 0px 0px 10px 1px var(--gold);
+.text-gold-shadow {
+  text-shadow: 0px 1px 5px var(--gold);
 }
 
 .background {
@@ -41,20 +41,22 @@
   background-size: 80px 80px, 80px 80px, 40px 40px, 40px 40px;
   background-color: #392b1d;
 }
-.glass {
+
+.glassmorphism {
   background: rgba(57, 27, 0, 0.5);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
-  border: 3px solid var(--gold);
 }
 
+/* ---- NAV ---- */
+/* Bg */
 .nav-bg {
-  background: var(--brown);
+  /* background: var(--brown); */
   position: relative;
   z-index: 10;
   overflow: hidden;
 }
-
+/* Line */
 .nav-bg::before {
   content: "";
   position: absolute;
@@ -68,7 +70,7 @@
   z-index: -2;
   border-radius: 15px;
 }
-
+/* Line */
 .nav-bg::after {
   content: "";
   position: absolute;
@@ -82,7 +84,7 @@
   z-index: -2;
   border-radius: 15px;
 }
-
+/* Title */
 .nav-title {
   background: var(--brown);
   background: linear-gradient(
@@ -95,23 +97,20 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--gold);
 }
-
+/* Link */
 .nav-link {
   color: rgba(255, 170, 0, 0);
   text-decoration-color: var(--gold);
   -webkit-text-stroke: 1px var(--gold);
 }
 
-.footer-text {
-  color: var(--gold);
-  font-weight: 600;
-}
 
+/* ---- Title ---- */
 .title-container {
   position: relative;
   z-index: 10;
 }
-
+/* Black bg */
 .title-container::before {
   content: "";
   position: absolute;
@@ -123,7 +122,7 @@
   background: #392b1d;
   z-index: -1;
 }
-
+/* Title */
 .title {
   background: var(--gold);
   background: linear-gradient(to bottom, var(--brown) 40%, var(--gold) 100%);
@@ -137,6 +136,8 @@
   z-index: 10;
 }
 
+
+/* ---- TopSales ---- */
 .topsales-title {
   background: var(--gold);
   background: linear-gradient(to bottom, var(--brown) 40%, var(--gold) 100%);
@@ -146,19 +147,15 @@
   -webkit-text-stroke: 1px rgb(255, 189, 57);
   text-shadow: 0px 1px 10px var(--gold);
 }
-
-.topsales-border {
-  position: relative;
-}
-
-.topsales-border::before {
+/*  Line */
+.topsales::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 95%;
+  width: 100%;
   height: 2px;
   background-image: radial-gradient(
     circle,
@@ -168,6 +165,8 @@
   border-radius: 15px;
 }
 
+
+/* ---- Card ---- */
 .card-title {
   background: var(--brown);
   background: linear-gradient(
@@ -180,7 +179,7 @@
   -webkit-text-fill-color: transparent;
   position: relative;
 }
-
+/* Line */
 .card-title::before {
   content: "";
   position: absolute;
@@ -199,29 +198,7 @@
   border-radius: 15px;
 }
 
-.gold-text {
-  color: var(--gold);
-  text-shadow: 0px 1px 5px var(--gold);
-}
-
-.search {
-  outline: none;
-  background: var(--brown);
-  color: var(--gold);
-  border: 1px solid var(--gold);
-  transition: 0.3s ease;
-}
-
-.search:focus {
-  outline: none;
-  border: 1px solid var(--gold);
-  box-shadow: 0px 0px 10px 1px var(--gold);
-}
-
-.input::placeholder {
-  color: #ddb635;
-}
-
+/* ---- Product ---- */
 .product-title {
   background: var(--brown);
   background: linear-gradient(
@@ -232,11 +209,9 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* -webkit-text-stroke: 1px rgb(255, 189, 57); */
-  /* -webkit-text-stroke: 1px var(--gold); */
   position: relative;
 }
-
+/* Line */
 .product-title::before {
   content: "";
   position: absolute;
@@ -251,29 +226,17 @@
   border-radius: 15px;
 }
 
+/* ---- Stock ---- */
 .in-stock {
   color: #54db15;
   text-shadow: 0px 1px 5px #54db15;
 }
-
 .out-stock {
   color: #dd3113;
   text-shadow: 0px 1px 5px #dd3113;
 }
 
-
-.button-container {
-  background: rgba(57, 27, 0, 0.5);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--gold);
-  transition: transform 0.5s ease-in;
-}
-.button-container:hover {
-  box-shadow: 0px 0px 10px 1px var(--gold);
-  scale: 0.95;
-}
-
+/* ---- Button ---- */
 .button {
   background: var(--brown);
   background: linear-gradient(
@@ -286,27 +249,3 @@
   -webkit-text-fill-color: transparent;
 }
 
-
-.filter-arrow-container{
-  background-color: var(--brown);
-  border: 1px solid var(--gold);
-}
-
-.filter-container {
-  background-color: var(--brown);
-  border: 1px solid var(--gold);
-  position: absolute;
-  /* top: 0;*/
-  right: 230px; 
-  z-index: 10;
-}
-
-.filter{
-  /* border-bottom: 1px solid var(--gold); */
-  text-decoration-color: var(--gold);
-}
-
-.filter:hover{
-  scale: 0.95;
-  box-shadow: 0px 0px 10px 1px var(--gold);
-}

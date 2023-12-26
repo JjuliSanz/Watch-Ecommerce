@@ -9,19 +9,17 @@ import Banner from "@/components/Banner";
 export default async function Home() {
   const products = await getProducts();
   const topProducts = await getTopProducts();
-  console.log(products)
+
   return (
     <main className="w-full min-h-screen">
-      {/* <Carrousel /> */}
       <Banner />
-      {/* <Card/> */}
       <div className="w-full p-10">
         <div className="title-container w-fit">
-          <div className="text-3xl font-bold title">Destacados</div>
+          <div className="text-3xl font-bold title">Featured</div>
         </div>
         <div className="grid grid-cols-6 w-full h-full mt-4">
           <div className="flex flex-wrap col-span-4 gap-4">
-            {products.map((product) => (
+            {products.slice(0, 3).map((product) => (
               <Card
                 url={product.url}
                 model={product.model}

@@ -1,5 +1,4 @@
 "use client";
-import { getProductById } from "@/lib/utils";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -13,9 +12,10 @@ const ProductInfo = ({ product }) => {
   return (
     <>
       <div className="w-[20%] flex flex-col gap-4 h-full justify-center items-center">
+        {/* Images column */}
         {product.images.slice(0, 7).map((image, index) => (
           <div
-            className={`w-[70px] h-[70px] rounded-xl border-2 border-[#ffaa00] cursor-pointer  hover:scale-[.95] ${productImage === image ? "goldShadow" : ""}`}
+            className={`w-[70px] h-[70px] rounded-xl border-2 border-gold cursor-pointer hover:scale-[.95] ${productImage === image ? "shadow-gold-shadow" : ""}`}
             key={index}
             onClick={() => handleImageClick(image)}
           >
@@ -29,8 +29,9 @@ const ProductInfo = ({ product }) => {
           </div>
         ))}
       </div>
+      {/* Image main */}
       <div className="w-full h-full flex justify-center items-center ">
-        <div className="w-[500px] h-[500px] relative glass rounded-xl goldShadow">
+        <div className="w-[500px] h-[500px] border-[3px] border-gold relative glassmorphism rounded-xl shadow-gold-shadow">
           <Image
             src={productImage}
             alt={product.model}

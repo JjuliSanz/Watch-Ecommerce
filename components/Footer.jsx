@@ -4,9 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#391b00]">
-      <div className="grid grid-cols-4 w-full border-t border-[#c88c00] lg:px-6 p-4">
+    <footer className="bg-brown">
+      <div className="grid grid-cols-4 w-full border-t border-gold lg:px-6 p-4">
         <div className="col-span-3 flex gap-6">
+          {/* Home */}
           <Link href="/" className="flex items-center w-full md:w-auto gap-2">
             <Image
               src="/watch-svgrepo-com.svg"
@@ -19,8 +20,9 @@ const Footer = () => {
               WatchStore
             </div>
           </Link>
-          <ul className="flex gap-4 text-base items-center footer-text">
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+          <ul className="flex gap-4 text-base items-center text-gold font-semibold">
+            {/* Watches */}
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
                 href="/watches"
@@ -28,7 +30,8 @@ const Footer = () => {
                 Watches
               </Link>
             </li>
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+            {/* Imports */}
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
                 href="/imports"
@@ -36,43 +39,47 @@ const Footer = () => {
                 Imports
               </Link>
             </li>
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+            {/* About */}
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
-                href="/watches"
+                href="#"
               >
                 About
               </Link>
             </li>
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+            {/* Terms */}
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
-                href="/imports"
+                href="#"
               >
                 Terms & Conditions
               </Link>
             </li>
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+            {/* Policy */}
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
-                href="/watches"
+                href="#"
               >
                 Shipping & Return Policy
               </Link>
             </li>
-            <li className="underline-offset-4 hover:text-white hover:underline hover:scale-[0.94]">
+            <li className="underline-offset-4 hover:underline hover:scale-[0.94]">
               <Link
                 className=""
-                href="/imports"
+                href="#"
               >
                 Privacy Policy
               </Link>
             </li>
           </ul>
         </div>
-        <div className="col-span-1 border-l border-[#c88c00] text-sm flex flex-col items-center justify-center gap-1 footer-text">
+        {/* Copyright */}
+        <div className="col-span-1 border-l border-gold text-sm flex flex-col items-center justify-center gap-1 text-gold font-semibold">
           <p>&copy; 2023 ElecScoot, Inc. All rights reserved.</p>
-          <hr className="hidden w-6 border-t border-[#c88c00] md:inline-block" />
+          <hr className="hidden w-6 border-t border-gold md:inline-block" />
           <p>Designed in Argentina</p>
         </div>
       </div>

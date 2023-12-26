@@ -3,9 +3,9 @@ import React from "react";
 import TopSales from "./TopSales";
 import Link from "next/link";
 
-const Card = ({ url, model, desc, id }) => {
+const Card = ({ url, model, desc, id, price }) => {
   return (
-    <div className=" w-[250px] h-[370px] flex flex-col rounded-xl glass goldShadow">
+    <div className=" w-[250px] h-[370px] flex flex-col rounded-xl border-[3px] border-gold glassmorphism shadow-gold-shadow">
       {/* Image */}
       <div className="pt-2 h-[50%] w-[90%] rounded-xl place-self-center">
         <Image
@@ -17,19 +17,26 @@ const Card = ({ url, model, desc, id }) => {
         />
       </div>
       {/* Text */}
-      <div className="h-[35%] flex flex-col  text-start p-2 gap-2">
+      <div className="flex flex-col text-start p-2 gap-2">
+        {/* Title */}
         <p className="text-lg font-semibold card-title  line-clamp-1">
           {model}
         </p>
-        <p className="text-sm line-clamp-3 gold-text">{desc}</p>
+        {/* Description */}
+        <p className="text-sm line-clamp-3 text-gold text-gold-shadow">{desc}</p>
+        {/* Price */}
+        <p className="text-sm font-medium text-gold text-gold-shadow">
+          ${price.toLocaleString()} USD
+        </p>
       </div>
+      {/* Button */}
       <div className="h-[15%] flex justify-center items-center">
-        <div className="w-fit button-container rounded-lg">
+        <div className="w-fit border border-gold glassmorphism hover:scale-[0.95] hover:shadow-gold-shadow rounded-lg">
           <Link
             href={`./watches/${id}`}
-            className="button text-xl font-regular py-1 px-6"
+            className="button text-xl font-regular px-2"
           >
-            Mas Info
+            More Info
           </Link>
         </div>
       </div>
