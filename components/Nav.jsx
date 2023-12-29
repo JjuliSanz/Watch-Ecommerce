@@ -7,13 +7,13 @@ import ThemeSwitcher from "./ThemeSwitcher";
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="w-full flex items-center justify-center nav-bg bg-brown p-2 gap-6">
+    <nav className="w-full flex items-center justify-center bg-brown p-2">
       {/* Logo */}{" "}
-      <ul className={`flex gap-6 items-center bg-brown`}>
+      <ul className={`flex gap-2 sm:gap-6 items-center bg-brown`}>
         {/* Watches */}
         <li>
           <Link
-            className={`nav-link text-2xl font-bold underline-offset-4 hover:underline ${
+            className={`nav-link max-[400px]:text-xl text-2xl font-bold underline-offset-4 hover:underline ${
               pathname === "/watches" ? "underline" : ""
             }`}
             href="/watches"
@@ -23,7 +23,7 @@ const Nav = () => {
         </li>
         {/* Title */}
         <li>
-          <Link href="/" className="flex items-center w-full md:w-auto gap-2">
+          <Link href="/" className="flex items-center w-full md:gap-2 nav-bg">
             <Image
               src="/watch-svgrepo-com.svg"
               width={50}
@@ -31,7 +31,7 @@ const Nav = () => {
               className="p-1 bg-cover bg-center"
               alt="logo"
             />
-            <div className="text-5xl uppercase block font-bold nav-title">
+            <div className="text-lg md:text-5xl uppercase block font-bold nav-title">
               WatchStore
             </div>
           </Link>
@@ -39,7 +39,7 @@ const Nav = () => {
         {/* Imports */}
         <li>
           <Link
-            className={`nav-link text-2xl font-bold underline-offset-4 hover:underline ${
+            className={`nav-link max-[400px]:text-xl text-2xl font-bold underline-offset-4 hover:underline ${
               pathname === "/imports" ? "underline" : ""
             }`}
             href="/imports"

@@ -2,7 +2,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[500px]">
+    <div className="w-full max-h-[500px]">
       <video autoPlay loop muted>
         <source src="/watches.mp4" />
       </video>

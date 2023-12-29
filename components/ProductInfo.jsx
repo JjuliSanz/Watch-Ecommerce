@@ -11,7 +11,7 @@ const ProductInfo = ({ product }) => {
 
   return (
     <>
-      <div className="w-[20%] flex flex-col gap-4 h-full justify-center items-center">
+      <div className="w-full lg:w-[20%] flex order-2 lg:order-1 lg:flex-col gap-4 h-full justify-center items-center">
         {/* Images column */}
         {product.images.slice(0, 7).map((image, index) => (
           <div
@@ -30,7 +30,7 @@ const ProductInfo = ({ product }) => {
         ))}
       </div>
       {/* Image main */}
-      <div className="w-full h-full flex justify-center items-center ">
+      <div className="w-full h-full flex justify-center items-center order-1 lg:order-2">
         <div className="w-[500px] h-[500px] border-[3px] border-gold relative glassmorphism rounded-xl shadow-gold-shadow">
           <Image
             src={productImage}

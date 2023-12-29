@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Card = ({ url, model, desc, id, price }) => {
   return (
-    <div className=" w-[250px] h-[370px] flex flex-col rounded-xl border-[3px] border-gold glassmorphism shadow-gold-shadow">
+    <div className="w-[250px] h-[370px] flex flex-col rounded-xl border-[3px] border-gold glassmorphism shadow-gold-shadow">
       {/* Image */}
       <div className="pt-2 h-[50%] w-[90%] rounded-xl place-self-center">
         <Image
@@ -19,7 +19,7 @@ const Card = ({ url, model, desc, id, price }) => {
       {/* Text */}
       <div className="flex flex-col text-start p-2 gap-2">
         {/* Title */}
-        <p className="text-lg font-semibold card-title  line-clamp-1">
+        <p className="text-lg font-semibold card-title line-clamp-1">
           {model}
         </p>
         {/* Description */}

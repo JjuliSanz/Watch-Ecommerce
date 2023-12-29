@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-const Filter = ({ searchParams }) => {
+const ImportFilter = ({ searchParams }) => {
   const [hidden, setHidden] = useState(true);
   const router = useRouter();
 
@@ -34,12 +34,12 @@ const Filter = ({ searchParams }) => {
           {/* Default */}
           <div
             className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow ${
-              searchParams.model === "" || searchParams.model === undefined
+              searchParams.price === "" || searchParams.price === undefined
                 ? "underline"
                 : ""
             }`}
             onClick={() => {
-              router.push("/watches?model=");
+              router.push("/imports");
             }}
           >
             Default
@@ -47,10 +47,10 @@ const Filter = ({ searchParams }) => {
           {/* Lowest */}
           <div
             className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow ${
-              searchParams.model === "lowest" ? "underline" : ""
+              searchParams.price === "lowest" ? "underline" : ""
             }`}
             onClick={() => {
-              router.push("/watches?model=lowest");
+              router.push("/imports?price=lowest");
             }}
           >
             LowestPrice
@@ -58,10 +58,10 @@ const Filter = ({ searchParams }) => {
           {/* Highest */}
           <div
             className={`cursor-pointer h-fit p-2 hover:shadow-gold-shadow ${
-              searchParams.model === "highest" ? "underline" : ""
+              searchParams.price === "highest" ? "underline" : ""
             }`}
             onClick={() => {
-              router.push("/watches?model=highest");
+              router.push("/imports?price=highest");
             }}
           >
             HighestPrice
@@ -72,4 +72,4 @@ const Filter = ({ searchParams }) => {
   );
 };
 
-export default Filter;
+export default ImportFilter;
