@@ -30,10 +30,10 @@ const ImportFilter = ({ searchParams }) => {
       {hidden ? (
         ""
       ) : (
-        <div className="bg-brown border border-gold z-10 top-[10px] right-[100px] flex rounded text-xs md:text-sm font-medium text-gold text-gold-shadow decoration-gold underline-offset-4">
+        <div className="bg-brown border border-gold z-10 top-[10px] right-[100px] flex rounded text-xs md:text-sm font-medium text-gold text-gold-shadow decoration-gold underline-offset-4 h-[35px] overflow-hidden">
           {/* Default */}
           <div
-            className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow ${
+            className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow hover:underline ${
               searchParams.price === "" || searchParams.price === undefined
                 ? "underline"
                 : ""
@@ -46,7 +46,7 @@ const ImportFilter = ({ searchParams }) => {
           </div>
           {/* Lowest */}
           <div
-            className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow ${
+            className={`cursor-pointer h-fit p-2 border-r border-gold  hover:shadow-gold-shadow hover:underline ${
               searchParams.price === "lowest" ? "underline" : ""
             }`}
             onClick={() => {
@@ -57,7 +57,7 @@ const ImportFilter = ({ searchParams }) => {
           </div>
           {/* Highest */}
           <div
-            className={`cursor-pointer h-fit p-2 hover:shadow-gold-shadow ${
+            className={`cursor-pointer h-fit p-2 hover:shadow-gold-shadow hover:underline ${
               searchParams.price === "highest" ? "underline" : ""
             }`}
             onClick={() => {

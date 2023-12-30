@@ -8,6 +8,8 @@ import {
   getProducts,
   getTopProducts,
 } from "@/lib/utils";
+import { Suspense } from "react";
+import Loading from "../loading";
 
 export default async function Watches({ searchParams }) {
   const products = await getProducts(searchParams.model);
@@ -33,42 +35,46 @@ export default async function Watches({ searchParams }) {
           <Filter searchParams={searchParams} />
         </div>
       </div>
+
       <div className="flex flex-col max-lg:items-center lg:grid lg:grid-cols-5 xl:grid-cols-6 max-lg:gap-4 w-full h-full mt-10 max-lg:mb-4">
-        <div className="flex flex-wrap max-xl:justify-center col-span-3 xl:col-span-4 gap-4">
-          {searchParams.model === "lowest"
-            ? lowestPrice.map((product) => (
-                <Card
-                  url={product.url}
-                  model={product.model}
-                  desc={product.desc}
-                  price={product.price}
-                  key={product.id}
-                  id={product.id}
-                />
-              ))
-            : searchParams.model === "highest"
-            ? highestPrice.map((product) => (
-                <Card
-                  url={product.url}
-                  model={product.model}
-                  desc={product.desc}
-                  price={product.price}
-                  key={product.id}
-                  id={product.id}
-                />
-              ))
-            : products.map((product) => (
-                <Card
-                  url={product.url}
-                  model={product.model}
-                  desc={product.desc}
-                  price={product.price}
-                  key={product.id}
-                  id={product.id}
-                />
-              ))}
-        </div>
-        <TopSales topProducts={topProducts} />
+        
+          <div className="flex flex-wrap max-xl:justify-center col-span-3 xl:col-span-4 gap-4">
+            {searchParams.model === "lowest"
+              ? lowestPrice.map((product) => (
+                  <Card
+                    url={product.url}
+                    model={product.model}
+                    desc={product.desc}
+                    price={product.price}
+                    key={product.id}
+                    id={product.id}
+                  />
+                ))
+              : searchParams.model === "highest"
+              ? highestPrice.map((product) => (
+                  <Card
+                    url={product.url}
+                    model={product.model}
+                    desc={product.desc}
+                    price={product.price}
+                    key={product.id}
+                    id={product.id}
+                  />
+                ))
+              : products.map((product) => (
+                  <Card
+                    url={product.url}
+                    model={product.model}
+                    desc={product.desc}
+                    price={product.price}
+                    key={product.id}
+                    id={product.id}
+                  />
+                ))}
+          </div>
+          
+          <TopSales topProducts={topProducts} />
+        
       </div>
     </main>
   );

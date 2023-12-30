@@ -1,5 +1,3 @@
-import Carrousel from "@/components/Carrousel";
-import Image from "next/image";
 import Card from "@/components/Card";
 import TopSales from "@/components/TopSales";
 import { getProducts, getTopProducts } from "@/lib/utils";
@@ -10,7 +8,7 @@ export default async function Home() {
   const topProducts = await getTopProducts();
 
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full min-h-screen ">
       <Banner />
       <div className="w-full p-4 lg:p-10 mt-4 sm:mt-4">
         <div className="title-container w-fit">

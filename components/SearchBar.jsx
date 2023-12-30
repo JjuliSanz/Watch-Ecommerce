@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Filter from "./Filter";
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
