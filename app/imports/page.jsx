@@ -1,7 +1,7 @@
 import Card from "@/components/Card";
 import Filter from "@/components/Filter";
-import ImportFilter from "@/components/ImportFilter";
-import ImportsCard from "@/components/ImportsCard";
+import ImportFilter from "@/components/import/ImportFilter";
+import ImportsCard from "@/components/import/ImportsCard";
 
 import SearchBar from "@/components/SearchBar";
 import TopSales from "@/components/TopSales";
@@ -35,11 +35,11 @@ export default async function Imports({ searchParams }) {
           </div>
         </div>
         {/* Search */}
-        <div className="w-[300px] flex justify-center items-center ml-[300px]">
+        <div className="w-[300px] flex justify-center items-center md:ml-[50px] lg:ml-[300px]">
           {/* <SearchBar /> */}
         </div>
         {/* Filter */}
-        <div className="hidden w-[300px] md:flex justify-center md:justify-start items-center gap-2">
+        <div className="hidden w-[300px] md:flex justify-center md:justify-start items-center gap-2 ml-[10px]">
           <ImportFilter searchParams={searchParams} />
         </div>
       </div>

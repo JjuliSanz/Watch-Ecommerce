@@ -1,5 +1,5 @@
 
-# Luxury Watches Ecommerce
+## Luxury Watches Ecommerce
 
 Explore an exquisite collection of Rolex watches at our next-generation e-commerce platform built with Next.js 13, powered by JavaScript. The sleek and responsive design, crafted with Tailwind CSS, provides an immersive shopping experience.
 

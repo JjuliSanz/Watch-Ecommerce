@@ -13,10 +13,6 @@ const SearchBar = () => {
     router.push(route);
   };
 
-  useEffect(() => {
-    router.push(`/watches`);
-  }, []);
-
   return (
     <div className="flex justify-center items-center">
       <form

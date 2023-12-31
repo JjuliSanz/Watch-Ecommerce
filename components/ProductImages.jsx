@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const ProductInfo = ({ product }) => {
+const ProductImages = ({ product }) => {
   const [productImage, setProductImage] = useState(product.images[0]);
 
   const handleImageClick = (image) => {
@@ -15,7 +15,7 @@ const ProductInfo = ({ product }) => {
         {/* Images column */}
         {product.images.slice(0, 7).map((image, index) => (
           <div
-            className={`w-[70px] h-[70px] rounded-xl border-2 border-gold cursor-pointer hover:scale-[.95] ${productImage === image ? "shadow-gold-shadow" : ""}`}
+            className={`w-[70px] h-[70px] rounded-xl border-2 border-gold cursor-pointer hover:scale-[.95] hover:shadow-gold-shadow ${productImage === image ? "shadow-gold-shadow" : ""}`}
             key={index}
             onClick={() => handleImageClick(image)}
           >
@@ -45,4 +45,4 @@ const ProductInfo = ({ product }) => {
   );
 };
 
-export default ProductInfo;
+export default ProductImages;

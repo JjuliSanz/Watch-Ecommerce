@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ThemeSwitcher from "./ThemeSwitcher";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 const Nav = () => {
   const pathname = usePathname();

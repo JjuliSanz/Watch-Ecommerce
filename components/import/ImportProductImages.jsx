@@ -20,7 +20,7 @@ const ImportProductImages = ({ product }) => {
         {product.variants && product.variants.length > 0
           ? product.variants[0].images.slice(0, 7).map((image, index) => (
               <div
-                className={`w-[70px] h-[70px] rounded-xl border-2 border-gold cursor-pointer hover:scale-[.95] ${
+                className={`w-[70px] h-[70px] rounded-xl border-2 border-gold cursor-pointer hover:scale-[.95] hover:shadow-gold-shadow ${
                   productImage === image ? "shadow-gold-shadow" : ""
                 }`}
                 key={index}

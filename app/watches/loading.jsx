@@ -17,15 +17,15 @@ const Loading = () => {
         {/* Category */}
         <div className="w-fit flex justify-center items-center mb-2 sm:mb-0">
           <div className="title-container w-fit">
-            <div className="text-3xl font-bold title">Amazon Watches</div>
+            <div className="text-3xl font-bold title">Watches</div>
           </div>
         </div>
         {/* Search */}
-        <div className="w-[300px] flex justify-center items-center ml-[300px]">
+        <div className="w-[300px] flex justify-center items-center md:ml-[50px] lg:ml-[300px]">
           <SearchBar />
         </div>
         {/* Filter */}
-        <div className="hidden w-[300px] md:flex justify-center md:justify-start items-center gap-2">
+        <div className="hidden w-[300px] md:flex justify-center md:justify-start items-center gap-2 ml-[10px]">
           <Filter />
         </div>
       </div>

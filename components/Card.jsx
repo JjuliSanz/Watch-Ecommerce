@@ -1,6 +1,4 @@
 import Image from "next/image";
-import React from "react";
-import TopSales from "./TopSales";
 import Link from "next/link";
 
 const Card = ({ url, model, desc, id, price }) => {

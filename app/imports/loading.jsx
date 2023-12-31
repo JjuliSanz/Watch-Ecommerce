@@ -14,7 +14,7 @@ const Loading = () => {
         {/* Category */}
         <div className="w-fit flex justify-center items-center mb-2 sm:mb-0">
           <div className="title-container w-fit">
-            <div className="text-3xl font-bold title">Watches</div>
+            <div className="text-3xl font-bold title">Amazon Watches</div>
           </div>
         </div>
       </div>

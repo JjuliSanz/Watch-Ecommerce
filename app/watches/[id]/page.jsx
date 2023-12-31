@@ -1,4 +1,4 @@
-import ProductInfo from "@/components/ProductInfo";
+import ProductImages from "@/components/ProductImages";
 import { getProductById } from "@/lib/utils";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ export default async function Watch({ params }) {
       {/* Go Back */}
       <Link
         href="/watches"
-        className="w-fit text-gold flex items-center gap-2 text-base font-medium glassmorphism rounded-lg border border-gold px-2 hover:scale-[0.95] hover:shadow-gold-shadow absolute top-[70px] left-[10px]"
+        className="w-fit text-gold flex items-center gap-2 text-base font-medium glassmorphism rounded-lg border border-gold px-2 hover:scale-[0.95] hover:shadow-gold-shadow absolute z-10 top-[45px] md:top-[70px] left-[10px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export default async function Watch({ params }) {
       {/* Product */}
       <div className="w-full min-h-[600px] flex flex-col lg:grid lg:grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl ">
         <div className="lg:col-span-4 flex flex-col lg:flex-row h-full gap-4 lg:gap-0 mt-0 sm:mt-4 lg:mt-0">
-          <ProductInfo product={product} />
+          <ProductImages product={product} />
         </div>
         <div className="col-span-3 flex flex-col gap-4 h-full p-4">
           {/* Reference */}

@@ -1,5 +1,4 @@
-import ImportProductImages from "@/components/ImportProductImages";
-import ProductInfo from "@/components/ProductInfo";
+import ImportProductImages from "@/components/import/ImportProductImages";
 import {
   getAmazonRapidAPIProductById,
   getRapidAPIProductById,
@@ -17,7 +16,7 @@ export default async function Import({ params }) {
       {/* Go Back */}
       <Link
         href="/imports"
-        className="w-fit text-gold flex items-center gap-2 text-base font-medium glassmorphism rounded-lg border border-gold px-2 hover:scale-[0.95] hover:shadow-gold-shadow absolute top-[70px] left-[10px]"
+        className="w-fit text-gold flex items-center gap-2 text-base font-medium glassmorphism rounded-lg border border-gold px-2 hover:scale-[0.95] hover:shadow-gold-shadow absolute z-10 top-[45px] md:top-[70px] left-[10px]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
