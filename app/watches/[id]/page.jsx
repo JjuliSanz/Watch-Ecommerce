@@ -29,38 +29,38 @@ export default async function Watch({ params }) {
         Back
       </Link>
       {/* Product */}
-      <div className="w-full min-h-[600px] flex flex-col lg:grid lg:grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl ">
+      <article className="w-full min-h-[600px] flex flex-col lg:grid lg:grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl ">
         <div className="lg:col-span-4 flex flex-col lg:flex-row h-full gap-4 lg:gap-0 mt-0 sm:mt-4 lg:mt-0">
           <ProductImages product={product} />
         </div>
         <div className="col-span-3 flex flex-col gap-4 h-full p-4">
           {/* Reference */}
-          <div className="text-sm text-gold text-gold-shadow">
+          <h4 className="text-sm text-gold text-gold-shadow">
             Ref: {product.ref}
-          </div>
+          </h4>
           {/* Title */}
-          <div className="text-3xl font-semibold product-title">
+          <h2 className="text-3xl font-semibold product-title">
             {product.model}
-          </div>
+          </h2>
           {/* Brand */}
-          <div className="text-xl font-medium text-gold text-gold-shadow justify-start">
+          <h4 className="text-xl font-medium text-gold text-gold-shadow justify-start">
             {product.brand}
-          </div>
+          </h4>
           {/* Price */}
-          <div className="text-3xl font-medium text-gold text-gold-shadow ">
+          <h3 className="text-3xl font-medium text-gold text-gold-shadow ">
             ${product.price.toLocaleString()} USD
-          </div>
+          </h3>
           {/* Description */}
-          <div className="text-xl font-medium text-gold text-gold-shadow">
+          <p className="text-xl font-medium text-gold text-gold-shadow">
             {product.desc}
-          </div>
+          </p>
           {/* Stock */}
           {product.stock > 0 ? (
-            <div className="text-xl font-medium in-stock">In Stock</div>
+            <h4 className="text-xl font-medium in-stock">In Stock</h4>
           ) : (
-            <div className="text-xl font-medium inline out-stock">
+            <h4 className="text-xl font-medium inline out-stock">
               Out Stock
-            </div>
+            </h4>
           )}
           {/* Ship */}
           {/* <div className="text-base font-medium text-gold text-gold-shadow">
@@ -81,7 +81,7 @@ export default async function Watch({ params }) {
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </main>
   );
 }

@@ -34,27 +34,27 @@ export default async function Import({ params }) {
         Back
       </Link>
       {/* Product */}
-      <div className="w-full min-h-[600px] flex flex-col lg:grid lg:grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl">
+      <article className="w-full min-h-[600px] flex flex-col lg:grid lg:grid-cols-7 border-[3px] border-gold glassmorphism shadow-gold-shadow rounded-xl">
         <div className="lg:col-span-4 flex flex-col lg:flex-row h-full gap-4 lg:gap-0 mt-0 sm:mt-4 lg:mt-0">
           <ImportProductImages product={product} />
         </div>
         <div className="col-span-3 flex flex-col gap-4 h-full p-4">
           {/* Reference */}
-          <div className="text-sm text-gold text-gold-shadow">
+          <h4 className="text-sm text-gold text-gold-shadow">
             Ref: {product.asin}
-          </div>
+          </h4>
           {/* Title */}
-          <div className="text-3xl font-semibold text-gold text-gold-shadow">
+          <h2 className="text-3xl font-semibold text-gold text-gold-shadow">
             {product.title}
-          </div>
+          </h2>
           {/* Brand */}
-          <div className="text-xl font-medium text-gold text-gold-shadow justify-start">
+          <h4 className="text-xl font-medium text-gold text-gold-shadow justify-start">
             {product.product_information.brand}
-          </div>
+          </h4>
           {/* Price */}
-          <div className="text-3xl font-medium text-gold text-gold-shadow ">
+          <h3 className="text-3xl font-medium text-gold text-gold-shadow ">
             ${product.price.current_price} USD
-          </div>
+          </h3>
           {/* Description */}
           {/* <div className="text-xl font-medium text-gold text-gold-shadow">
             {product.product_description}
@@ -105,7 +105,7 @@ export default async function Import({ params }) {
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </main>
   );
 }

@@ -19,11 +19,11 @@ export default async function Watches({ searchParams }) {
 
   return (
     <main className="w-full min-h-screen p-4 lg:p-10">
-      <div className="w-full flex flex-col md:flex-row items-center">
+      <header className="w-full flex flex-col md:flex-row items-center">
         {/* Category */}
         <div className="w-fit flex justify-center items-center mb-2 sm:mb-0">
           <div className="title-container w-fit">
-            <div className="text-3xl font-bold title">Watches</div>
+            <h2 className="text-3xl font-bold title">Watches</h2>
           </div>
         </div>
         {/* Search */}
@@ -34,48 +34,46 @@ export default async function Watches({ searchParams }) {
         <div className="hidden w-[300px] md:flex justify-center md:justify-start items-center gap-2 ml-[10px]">
           <Filter searchParams={searchParams} />
         </div>
-      </div>
+      </header>
 
-      <div className="flex flex-col max-lg:items-center lg:grid lg:grid-cols-5 xl:grid-cols-6 max-lg:gap-4 w-full h-full mt-10 max-lg:mb-4">
+      <section className="flex flex-col max-lg:items-center lg:grid lg:grid-cols-5 xl:grid-cols-6 max-lg:gap-4 w-full h-full mt-10 max-lg:mb-4">
+        <article className="flex flex-wrap max-xl:justify-center col-span-3 xl:col-span-4 gap-4">
+          {searchParams.model === "lowest"
+            ? lowestPrice.map((product) => (
+                <Card
+                  url={product.url}
+                  model={product.model}
+                  desc={product.desc}
+                  price={product.price}
+                  key={product.id}
+                  id={product.id}
+                />
+              ))
+            : searchParams.model === "highest"
+            ? highestPrice.map((product) => (
+                <Card
+                  url={product.url}
+                  model={product.model}
+                  desc={product.desc}
+                  price={product.price}
+                  key={product.id}
+                  id={product.id}
+                />
+              ))
+            : products.map((product) => (
+                <Card
+                  url={product.url}
+                  model={product.model}
+                  desc={product.desc}
+                  price={product.price}
+                  key={product.id}
+                  id={product.id}
+                />
+              ))}
+        </article>
         
-          <div className="flex flex-wrap max-xl:justify-center col-span-3 xl:col-span-4 gap-4">
-            {searchParams.model === "lowest"
-              ? lowestPrice.map((product) => (
-                  <Card
-                    url={product.url}
-                    model={product.model}
-                    desc={product.desc}
-                    price={product.price}
-                    key={product.id}
-                    id={product.id}
-                  />
-                ))
-              : searchParams.model === "highest"
-              ? highestPrice.map((product) => (
-                  <Card
-                    url={product.url}
-                    model={product.model}
-                    desc={product.desc}
-                    price={product.price}
-                    key={product.id}
-                    id={product.id}
-                  />
-                ))
-              : products.map((product) => (
-                  <Card
-                    url={product.url}
-                    model={product.model}
-                    desc={product.desc}
-                    price={product.price}
-                    key={product.id}
-                    id={product.id}
-                  />
-                ))}
-          </div>
-          
-          <TopSales topProducts={topProducts} />
-        
-      </div>
+        <TopSales topProducts={topProducts} />
+      </section>
     </main>
   );
 }
