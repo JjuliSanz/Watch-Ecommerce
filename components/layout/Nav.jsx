@@ -7,7 +7,7 @@ import ThemeSwitcher from "../ThemeSwitcher";
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="w-full flex items-center justify-center bg-brown p-2">
+    <nav className="w-full flex items-center justify-center bg-brown p-2 overflow-x-hidden">
       {/* Logo */}{" "}
       <ul className={`flex gap-2 sm:gap-6 items-center bg-brown`}>
         {/* Watches */}

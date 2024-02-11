@@ -247,3 +247,27 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #ffaa00 #391b00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--brown);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--gold);
+    border-radius: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 170, 0, 0.7);
+  }
