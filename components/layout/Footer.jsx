@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
         {/* Copyright */}
         <div className="col-span-1 lg:border-l border-gold text-sm flex flex-col items-center justify-center gap-1 text-gold font-semibold">
-          <p>&copy; 2023 ElecScoot, Inc. All rights reserved.</p>
+          <p>&copy; 2023 WatchStore, Inc. All rights reserved.</p>
           <hr className="w-6 border-t border-gold" />
           <p>Designed in Argentina</p>
         </div>
